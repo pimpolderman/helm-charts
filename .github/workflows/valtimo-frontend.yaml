@@ -4,9 +4,8 @@ on:
   push:
     paths:
       - 'charts/valtimo-frontend/**'
-  pull_request:
-    paths:
-      - 'charts/valtimo-frontend/**'
+    branches:
+      - main
 
 jobs:
   build_valtimo_frontend:

@@ -4,9 +4,8 @@ on:
   push:
     paths:
       - 'charts/valtimo-backend/**'
-  pull_request:
-    paths:
-      - 'charts/valtimo-backend/**'
+    branches:
+      - main
 
 jobs:
   build_valtimo_backend:
