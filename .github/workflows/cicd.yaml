@@ -7,7 +7,7 @@ on:
 
 jobs:
   build_valtimo_backend:
-    if: ${{ contains(toJson(github.event.commits.*.modified), 'charts/valtimo-backend') }}
+    if: ${{ contains(toJson(github.event.commits.*.modified), 'charts/valtimo-backend/') }}
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
@@ -38,7 +38,7 @@ jobs:
   
   build_valtimo_frontend:
     runs-on: ubuntu-latest
-    if: ${{ contains(toJson(github.event.commits.*.modified), 'charts/valtimo-frontend') }}
+    if: ${{ contains(toJson(github.event.commits.*.modified), 'charts/valtimo-frontend/') }}
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
