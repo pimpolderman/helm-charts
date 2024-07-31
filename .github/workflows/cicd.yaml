@@ -1,9 +1,19 @@
 name: Build and Publish Helm Chart
 
+#on:
+#  push:
+#    branches:
+#      - main
 on:
   push:
-    branches:
-      - main
+    paths:
+      - 'charts/valtimo-backend/**'
+      - 'charts/valtimo-frontend/**'
+  pull_request:
+    paths:
+      - 'charts/valtimo-backend/**'
+      - 'charts/valtimo-frontend/**'
+
 
 jobs:
   build_valtimo_backend:
