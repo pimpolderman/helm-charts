@@ -160,6 +160,16 @@ entries:
   valtimo-frontend:
   - apiVersion: v2
     appVersion: 0.1.0
+    created: "2024-07-31T07:20:57.112195485Z"
+    description: A Helm chart for Kubernetes
+    digest: d0365f615e1455fe92942a0ad4aa7d6978cc869f87003c0aef34cf3c6228c8d2
+    name: valtimo-frontend
+    type: application
+    urls:
+    - https://github.com/pimpolderman/helm-charts/releases/download/valtimo-frontend-0.1.13/valtimo-frontend-0.1.13.tgz
+    version: 0.1.13
+  - apiVersion: v2
+    appVersion: 0.1.0
     created: "2024-07-04T13:12:46.734943647Z"
     description: A Helm chart for Kubernetes
     digest: af28bdce96598caf7904a95a6bfcab772fdd797e1f3fb4ba2435621cb55fc304
@@ -198,4 +208,4 @@ entries:
     urls:
     - https://github.com/valtimo-platform/helm-charts/releases/download/valtimo-frontend-0.1.3/valtimo-frontend-0.1.3.tgz
     version: 0.1.3
-generated: "2024-07-31T07:20:00.133442925Z"
+generated: "2024-07-31T07:20:57.112231683Z"
